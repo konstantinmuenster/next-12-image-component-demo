@@ -1,5 +1,9 @@
 {
   "name": "next-12-image-component-demo",
+  "author": {
+    "name": "Konstantin Münster",
+    "email": "mail@konstantin.digital"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,8 +21,11 @@
     "@types/node": "18.6.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.8",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.3",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7",
     "typescript": "4.7.4"
   }
 }
