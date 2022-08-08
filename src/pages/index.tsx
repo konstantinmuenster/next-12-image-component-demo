@@ -19,9 +19,10 @@ const FixedImageSizePage: NextPage = () => {
               <Image
                 src={image.src}
                 alt="Unsplash Image"
+                className="rounded-md bg-gray-100 w-full"
                 width={600}
                 height={600}
-                className="rounded-md bg-gray-100"
+                priority={key === 0}
               />
               <span className="block my-2 text-gray-400 text-sm hover:text-gray-700">
                 View on <Link href={image.href}>Unsplash</Link>

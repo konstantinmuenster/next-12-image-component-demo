@@ -16,13 +16,15 @@ const FillModePage: NextPage = () => {
         {unsplashImages.map((image, key) => {
           return (
             <div key={key}>
-              <Image
-                src={image.src}
-                alt="Unsplash Image"
-                width={600}
-                height={600}
-                className="rounded-md bg-gray-100"
-              />
+              <div className="relative h-96 overflow-hidden">
+                <Image
+                  src={image.src}
+                  alt="Unsplash Image"
+                  className="object-cover rounded-md bg-gray-100"
+                  fill={true}
+                  priority={key === 0}
+                />
+              </div>
               <span className="block my-2 text-gray-400 text-sm hover:text-gray-700">
                 View on <Link href={image.href}>Unsplash</Link>
               </span>
